@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<meta charset="utf-8">
+  	<title>Another cafe</title>
+    <link rel="shortcut icon" href="images/coffee.png">
+  	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+  	<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="circletype.min.js"></script>
+  </head>
+  
+  <body>
+
+  <!-- Інтро -->
+
+  <div class="intro">
+  <div class="container">
+  <header>
+  	  <div class="header_logo">
+  	    <h1 id="waff_and_love_small">Waff&amp;Love</h1>
+  	    <div class="diamonds">
+  	      <div id="diamond1"> </div>
+  	      <h1>Coffee</h1>
+  	      <div id="diamond1"> </div>
+  	    </div>
+  	  </div>
+  	<nav id="nav" class="nav">
+      <div class="main_menu_container">
+        <ul>
+      		<li><a class="nav_ref" href="#about_us_ref">About us</a></li>
+      		<li><a class="nav_ref" href="#reservation_ref">Reservation</a></li>
+      		<li><a class="nav_ref" href="#out_gallery_ref">Our gallery</a></li>
+      		<li><a class="nav_ref" href="#menu_ref">Menu</a><div></li>
+      		<li><a class="nav_ref" href="#contact_us_ref">Get in touch</a>
+            <ul>
+        			<li><a class="nav_ref" id="contacts_ref" href="#address">Address</a>
+        			<li><a class="nav_ref" id="contacts_ref" href="#working_hours">Working hours</a></li>
+        			<li><a class="nav_ref" id="contacts_ref" href="#social_links">Socials</a></li>
+            </ul></li>
+        </ul>			
+  		</div>
+  	</nav>
+
+  	<div class="burger" id="burger_menu_btn"> <!-- Бургерне меню -->
+  	  <div class="burger_line_1"></div>
+  	  <div class="burger_line_2"></div>
+  	  <div class="burger_line_3"></div>
+  	  <div class="burger_line_4"></div>
+   </div>
+  </header>
+  	  <div class="intro_inner">
+  	    <h1 id="waff_and_love_large">Waff&amp;Love</h1>
+  	    <div class="diamonds">
+  	    <div id="diamond2"> </div>
+  	    <h1>Coffee</h1>
+  	    <div id="diamond2"> </div>
+  	    </div>
+  	    <h2 id="year">Since 1972</h2>
+        <div class="socials">
+          <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+          <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
+          <a href="http://www.pinterest.com"><i class="fa fa-3x fa-pinterest-square"></i></a>
+          <a href="http://www.instagram.com"><i class="fa fa-3x fa-instagram"></i></a>
+        </div>
+  	  </div>
+  </div> <!-- container -->
+
+  <video id="video_background" poster="images/video_poster.png" autoplay muted loop>
+    <source src="videos/video.mp4" type="video/mp4">
+  </video>
+
+  </div> <!-- intro -->
+
+  <!-- "Про нас" --> 
+
+  <div class="about_us" id="about_us_ref">
+  	<div class="container2">
+  	<div class="our_story">
+  	  <h1 id="about">About us</h1>
+  	  <h1 id="our">Our story</h1>
+  	  <p id="our_text">
+      Where do we make appointments the most often? Where do we hurry in the morning to drink aromatic coffee, have breakfast or eat a cake or croissant before work? Where do we go in the evening to skip the rush hour, drink a glass of wine or a cocktail, calmly make plans for the next day or just scroll through the Facebook feed?<br><br>To the coffee shop. It's cozy here. It's delicious here. Here, from the first visit, the waiters will remember your favorite coffee, and from the third they will ask: "Should I bring our regular order?"<br><br>Having started in 1972 as a small family cafe, Waff&amp;Love is still a place where you feel just like at home.</p>
+  	  <img id="our_img1" src="images/our_story_1.jpg">
+  	  <img id="our_img2" src="images/our_story_2.jpg">
+  	</div>
+  	<div class="what_we_do">	
+  	  <img id="what_img1" src="images/what_we_do_1.jpg">
+  	  <img id="what_img2" src="images/what_we_do_2.jpg">
+  	  <img id="what_img3" src="images/what_we_do_3.jpg">
+  	  <h1 id="what">What we do</h1>
+  	  <p id="what_text">Great coffee<br>Our visitors can taste different sorts of coffee from many countries. Our collectoin includes 20+ types of coffee and 30+ types of tea.<br><br>Incredible desserts<br>We cook all desserts in our cafe using only natural products. This is the key to the quality of our sweets that are popular among guests.<br><br>Musical evenings<br>On some Fridays, you can hear bright covers of famous tunes performed by musicians.
+      </p>
+  	</div>
+  	</div> <!-- container2 -->
+  </div> <!-- about_us -->
+
+  <!-- Бронювання столиків --> 
+
+  <div class="reservation" id="reservation_ref">
+	<h1 id="reservation">Reservation</h1>
+	<div class="diamonds">
+	  <div id="diamond1"> </div>
+	  <p id="book">Book a table online</p>
+	  <div id="diamond1"> </div>
+  </div>
+
+  <form action="#" id="reservation_form">
+    <div id="column_1">
+      <div>
+        <p>Your name</p>
+        <input type="text" name="username" placeholder="Your name" tabindex="1" required>
+      </div>
+      </br>
+      <div>
+        <p>Phone number</p>
+        <input type="tel" name="phone" placeholder="+123456789" tabindex="2" required>
+      </div>
+    </div>
+    <div id="column_2">
+      <div>
+        <p>Date</p>
+        <input type="date" name="date" id="date" tabindex="3" required>
+      </div>
+      </br>
+       <div>
+       <p>Guests</p>
+      <select name="select" tabindex="4">
+        <option>1</option> 
+        <option selected>2</option> 
+        <option>3</option> 
+        <option>4</option> 
+        <option>5</option>        
+      </select>
+      </div>
+    </div>
+    <div id="column_3">
+      <div>
+        <p>Time</p>
+        <input type="text" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" placeholder="18:00" tabindex="5" required>
+      </div>
+      </br>
+      <div>
+        <button type="submit">Make a reservation</button>
+      </div>
+    </div>
+    </form>	
+
+    <p id="book">You can also call +111111111 to make a reservation.</p>
+  </div> <!-- reservation -->
+
+  <!-- Галерея --> 
+
+  <div class="our_gallery" id="out_gallery_ref">
+	<h1 id="our_gallery_large">Our gallery</h1>
+	<h1 id="our_gallery_small">Our gallery</h1>
+	<div class="gallery_images">
+		<img id="gallery_image" src="images/gallery_images/1.jpg">
+		<img id="gallery_image" src="images/gallery_images/2.jpg">
+		<img id="gallery_image" src="images/gallery_images/3.jpg">
+		<img id="gallery_image" src="images/gallery_images/4.jpg">
+		<img id="gallery_image" src="images/gallery_images/5.jpg">
+		<img id="gallery_image" src="images/gallery_images/6.jpg">
+		<img id="gallery_image" src="images/gallery_images/7.jpg">
+		<img id="gallery_image" src="images/gallery_images/8.jpg">
+		<img id="gallery_image" src="images/gallery_images/9.jpg">
+		<img id="gallery_image" src="images/gallery_images/10.jpg">
+	</div>
+  </div> <!-- our_galery -->
+
+  <!-- Відгуки --> 
+ 
+  <div class="testimonials">
+    <div class="testimonials_inner">
+    <h1 id="testimonials">Testimonials</h1>
+    <div class="diamonds">
+      <div id="diamond1"> </div>
+      <p>Explore testimonials from our clients or add your own.</p>
+	    <div id="diamond1"> </div>
+   </div>	
+
+   <div class="testimonials_read">
+     <div class="clients_testimonial">
+       <div class="clients_image">
+         <img src="images/smile.png" width="50px" height="50px">
+       </div>
+       <div class="clients_text">
+        <p>“Excellent customer service and great coffee, a little more pricey than competitors but they will go the extra mile, and their coffee is higher quality than other vendors. I would recommend this place if you love good service and coffee!!!”</p>         
+       </div>
+       <div class="customers_name">
+         <h3>John</h3>
+       </div>
+     </div>
+   </div>
+
+   <button id="add">Add a testimonial</button>
+
+   <div class="divider"></div>
+   
+   <div class="testimonial_form">
+    <form action="#" method="post" enctype="multipart/form-data"> 
+     <div class="close_form">
+        <div class="close_line_1"></div>
+        <div class="close_line_2"></div>
+      </div>
+
+    <div class="customer_contacts">
+      <div> 
+        <p>Full name</p>
+        <input type="text" name="full_name" placeholder="Name" tabindex="1" required>
+      </div>
+      <div>
+        <p>Your phone</p>
+        <input type="tel" name="phone_2" placeholder="Phone" tabindex="2" required>
+      </div>
+      <div>
+        <p>E-mail</p>
+        <input type="email" name="email" placeholder="E-mail" tabindex="3">
+      </div>
+    </div>
+    <div class="textarea">
+      <p>Your testimonial</p>
+      <textarea id="textarea" placeholder="Write your testimonial here." tabindex="4" required></textarea>
+    </div>
+    <div>
+      <p>Make this testimonial public?</p>
+      <input type="radio" name="radio" checked id="radio"> Yes
+      <br>
+      <input type="radio" name="radio" id="radio"> No
+    </div>
+    <div>
+      <p>Add your photo here</p>
+      <input type="file" accept=".png, .jpg, .jpeg" />
+    </div>
+    <button type="reset">Clear</button>
+    <br>
+    <button type="submit">Send</button>
+
+
+   </form>
+  </div>
+  </div>
+  </div> <!-- testimonials -->
+
+
+  <!-- Меню --> 
+
+  <div class="menu" id="menu_ref">
+  <div class="menu_img">
+   	<img id="menu_img" src="images/menu.jpg">
+  </div>
+
+  <div class="menu_text">
+	<h1 id="our_menu_large">Our menu</h1>
+	<h1 id="our_menu_small">Our menu</h1>
+
+    <input type="radio" name="r" id="r1" checked>
+    <input type="radio" name="r" id="r2">
+    <input type="radio" name="r" id="r3">
+
+	<div class="menu_inner page1">  <!-- Перша сторінка меню --> 
+
+	  <div class="coffee_left">  
+
+	  	<div class="diamonds">
+  	    <div id="diamond1"> </div>
+  	    <h1 id="table_header">Espresso</h1>
+  	    <div id="diamond1"> </div>
+  	    </div>
+
+	    <table id="table_left">
+	 	  <tbody>
+	 		<tr>
+	 		  <td>Espresso</td>
+	 		  <td>&#36;2.50</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Americano</td>
+	 		  <td>&#36;2.50</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Macchiato</td>
+	 		  <td>&#36;2.50</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Latte</td>
+	 		  <td>&#36;3.50</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Cappuccino</td>
+	 		  <td>&#36;3.50</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Extra Shot</td>
+	 		  <td>&#36;1.00</td>
+	 		</tr>
+	 	   </tbody>
+	    </table>	
+	    </div>
+
+	    <div class="coffee_right">
+
+        <div class="diamonds">
+  	    <div id="diamond1"> </div>
+  	    <h1 id="table_header">Coffee</h1>
+  	    <div id="diamond1"> </div>
+  	    </div>
+
+	    <table id="table_right">
+	 	  <tbody>
+	 		<tr>
+	 		  <td>Drip</td>
+	 		  <td>&#36;2.00</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>French Press</td>
+	 		  <td>&#36;3.50</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Vacuum pot</td>
+	 		  <td>&#36;5.00</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Light Roast</td>
+	 		  <td>&#36;2.95</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>House Roast</td>
+	 		  <td>&#36;2.95</td>
+	 		</tr>
+	 		<tr>
+	 		  <td>Dark Roast</td>
+	 		  <td>&#36;3.95</td>
+	 		</tr>
+	 	   </tbody>
+	    </table>	
+	    </div>
+    </div> <!-- menu_inner page1 --> 
+
+
+
+      <div class="menu_inner page2">  <!-- cтр 2 --> 
+
+    <div class="coffee_left">  
+
+      <div class="diamonds">
+        <div id="diamond1"> </div>
+        <h1 id="table_header">Non-coffee</h1>
+        <div id="diamond1"> </div>
+        </div>
+
+      <table id="table_left">
+      <tbody>
+      <tr>
+        <td>Hot tea</td>
+        <td>&#36;2.25</td>
+      </tr>
+      <tr>
+        <td>Iced tea</td>
+        <td>&#36;2.65</td>
+      </tr>
+      <tr>
+        <td>Hot chocolate</td>
+        <td>&#36;2.85</td>
+      </tr>
+      <tr>
+        <td>Lemonade</td>
+        <td>&#36;3.50</td>
+      </tr>
+      <tr>
+        <td>Fruit smoothie</td>
+        <td>&#36;4.15</td>
+      </tr>
+      <tr>
+        <td>Orange juice</td>
+        <td>&#36;3.25</td>
+      </tr>
+       </tbody>
+      </table>  
+      </div>
+
+      <div class="coffee_right">
+
+        <div class="diamonds">
+        <div id="diamond1"> </div>
+        <h1 id="table_header">Add-ons</h1>
+        <div id="diamond1"> </div>
+        </div>
+
+      <table id="table_right">
+      <tbody>
+      <tr>
+        <td>Flavor</td>
+        <td>&#36;0.65</td>
+      </tr>
+      <tr>
+        <td>Extra shot</td>
+        <td>&#36;0.65</td>
+      </tr>
+      <tr>
+        <td>Almond milk</td>
+        <td>&#36;0.65</td>
+      </tr>
+       </tbody>
+      </table>  
+      </div>
+    </div> <!-- menu_inner page2 -->
+
+     <div class="menu_inner page3">  <!-- cтр 3 --> 
+ 
+      <div class="coffee_left">
+
+      <div class="diamonds">
+        <div id="diamond1"> </div>
+        <h1 id="table_header">Pastries</h1>
+        <div id="diamond1"> </div>
+        </div>
+
+      <table id="table_left">
+      <tbody>
+      <tr>
+        <td>Muffins</td>
+        <td>&#36;3.50</td>
+      </tr>
+      <tr>
+        <td>Croissants</td>
+        <td>&#36;3.50</td>
+      </tr>
+      <tr>
+        <td>Cinnamon roll</td>
+        <td>&#36;4.15</td>
+      </tr>
+      <tr>
+        <td>Fruit tart</td>
+        <td>&#36;4.30</td>
+      </tr>
+      <tr>
+        <td>Chocolate eclair</td>
+        <td>&#36;5.25</td>
+      </tr>
+      <tr>
+        <td>Ice cream</td>
+        <td>&#36;3.50</td>
+      </tr>
+       </tbody>
+      </table> 
+      </div> 
+    </div> <!-- menu_inner page3 -->
+
+    <div class="labels">
+    <label for="r1" class="bar" id="bar1"></label>
+    <label for="r2" class="bar" id="bar2"></label>
+    <label for="r3" class="bar" id="bar3"></label>
+    </div> 
+
+    </div> <!-- menu_text -->
+    </div> <!-- menu -->
+
+   <!-- Контакти --> 
+
+   <div class="contact_us" id="contact_us_ref">
+   <div class="container">
+  	<h1 id="contact_us">Contacts</h1>
+   <div class="contacts">
+   <div class="address" id="address">
+    <h2>Address</h2>
+
+    <div class="icon_text">
+  	  <i class="fa fa-map-marker" aria-hidden="true" id="map_marker"></i>
+  	  <p>404 Sunnyslope Drive</p>
+    </div>
+
+    <div class="icon_text">
+  	  <i class="fa fa-phone" aria-hidden="true"></i>
+  	  <p>+111111111111 / +22222222 </p>
+    </div>
+
+    <div class="icon_text">
+  	  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+  	  <p>waff&amp;love@gmail.com</p>
+    </div>
+
+    </div>
+    <div class="working_hours" id="working_hours">
+  	 <h2>Working hours</h2>
+  	 <p id="contact_us_text">10:00 am to 11:00 pm on Weekdays</p>
+  	  <p id="contact_us_text">11:00 am to 11:00 pm on Weekends</p>
+    </div>
+    <div class="social_links" id="social_links">
+  	  <h2>Social links</h2>
+  	  <div class="socials">
+          <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+          <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
+          <a href="http://www.pinterest.com"><i class="fa fa-3x fa-pinterest-square"></i></a>
+          <a href="http://www.instagram.com"><i class="fa fa-3x fa-instagram"></i></a>
+        </div>
+   </div> <!-- social_links -->
+   </div> <!-- contacts -->
+   </div> <!-- container -->
+   </div> <!-- contact us -->
+
+ 
+  <!-- JS -->
+
+  <script>
+  $(document).ready(function(){
+    $("#nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+  });
+  </script>
+  <script>
+  	new CircleType(document.getElementById('waff_and_love_small')).radius(500);
+  </script>
+  <script>
+  	new CircleType(document.getElementById('waff_and_love_large')).radius(500);
+  </script>
+  <script>
+  	new CircleType(document.getElementById('year')).dir(-1).radius(500);
+  </script>
+  <script>
+  $(document).ready(function(){
+    $('#burger_menu_btn').click(function (event) {
+        $('.nav, .main_menu_container, .nav_ref, .intro_inner, .burger_line_1, .burger_line_2, .burger_line_4, .burger_line_3').toggleClass('active'); 
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function(){
+    $('#add, .close_form').click(function (event) {
+        $('.testimonial_form, #add, .divider, .close_form, .testimonials_read').toggleClass('active'); 
+    });
+  });
+  </script>
+
+ </body>
+</html>   
